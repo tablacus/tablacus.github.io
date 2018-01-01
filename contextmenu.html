@@ -1,0 +1,135 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>コマンドライン・コンテキストメニュー・Tablacus Context Menu</title>
+<link rel="stylesheet" type="text/css" href="http://www.eonet.ne.jp/~gakana/common.css" />
+<link rel="alternate" hreflang="en" title="The English version" href="contextmenu_en.html" />
+<script type="text/javascript" src="./reload.js"></script>
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#8b0000" alink="#ff0000">
+<table width="100%"><td>
+<iframe src="http://www.eonet.ne.jp/~gakana/menu.html" width=468 height=20 border=0 marginwidth=0 marginheight=0 frameborder=0 scrolling="no" class="topmenu">
+<a href="http://www.eonet.ne.jp/~gakana/">[Home]</a>
+</iframe>
+</td><td align="right"><a href="contextmenu_en.html">[English]</a></td>
+</table>
+<table width="100%" summary="top" border=0 cellpadding=0 cellspacing=0 class="bar">
+<tr>
+<td align="center">
+<b>コマンドライン・コンテキストメニュー・ツール<br>Tablacus Context Menu</b>
+</td>
+<td align="right" class="rate">
+<script type="text/javascript" src="./r.js"></script>
+</td>
+</tr>
+</table>
+<table><tr><td>
+<small>
+フリーウェア・Windows 7/(Vista)/XP/(2000)  32bit(x86 Edition)/64bit(x64 Edition)</small></td><td>
+<div id="fb-root"></div><script src="http://connect.facebook.net/ja_JP/all.js#xfbml=1"></script><fb:like href="http://www.eonet.ne.jp/~gakana/tablacus/contextmenu.html" send="false" layout="button_count" width="200" show_faces="true" font=""></fb:like>
+</td></tr></table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Context Menu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="1266665201"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<table style="width: 100%; height:80px; border:1px solid black; margin-top: 3; margin-bottom: 3"><tr>
+<td><img src="img/tcm48.png"></td><td><b><big>Tablacus Context Menu</big></b><br>更新日: 2013年11月20日</td>
+<td><b>Version 13.11.20<br><a href="https://github.com/tablacus/TablacusContextMenu/releases/download/13.11.20/tcm131120.cab">ダウンロード (55.9KB)</a></b></td>
+<td><a href="http://www.vector.co.jp/soft/winnt/util/se501862.html">ミラー(Vector)</a><br>
+<a href="http://www.freewarefiles.com/Tablacus-ContextMenu_program_72757.html">ミラー(FreewareFiles)</a>
+</td></tr>
+</tr>
+</table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Context Menu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="1266665201"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+<div class="bar"><b>Tablacus Context Menu</b></div>
+<ul type="Features">
+<ul>
+<li>コマンドラインからコンテキストメニューを表示・実行します。</li>
+</ul>
+<br>
+Usage:<br>
+tcm64 [options] 項目 [項目2]…<br>
+<ul>
+<li>64ビットのコンテキストメニューを実行</li>
+</ul>
+tcm32 [options] 項目 [項目2]…<br>
+<ul>
+<li>32ビットのコンテキストメニューを実行</li>
+</ul>
+
+<br>
+Options:<br>
+<table>
+<tr><td>-x</td><td>コンテキストメニューを表示する x座標 省略時はマウスカーソルのx座標</td></tr>
+<tr><td>-y</td><td>コンテキストメニューを表示する y座標 省略時はマウスカーソルのy座標</td></tr>
+<tr><td>-Directory</td><td>作業ディレクトリ 省略時は NULL</td></tr>
+<tr><td>-Parameter</td><td>パラメータ 省略時は NULL</td></tr>
+<tr><td>-Show</td><td>SW_ values 省略時は SW_SHOWNORMAL</td></tr>
+<tr><td>-fMask</td><td>CMIC_MASK_ values</td></tr>
+<tr><td>-Flags</td><td>Optional flags 省略時は 0 (CMF_NORMAL)</td></tr>
+<tr><td>-Timer</td><td>コマンド実行後にTablacus ContextMenuが終了するタイマー 省略時は 1</td></tr>
+<tr><td>-Invoke</td><td>名前のコマンドを実行</td></tr>
+<tr><td>-Drop</td><td>右ボタンのドラッグ＆ドロップメニューを表示</td></tr>
+<tr><td>-grfKeyState</td><td>ドラッグ＆ドロップのボタンステート</td></tr>
+</table><br>
+e.g.:<br>
+tcm32 -x 500 -y 200 C:\hoge\fuga c:\hoge\piyo<br>
+tcm64 -x 500 -y 200 C:\hoge\fuga c:\hoge\piyo<br>
+tcm64 -Invoke "*Microsoft Security Essentials*" C:\hoge\fuga<br>
+tcm32 -Invoke "*Microsoft Security Essentials*" C:\hoge\fuga<br>
+tcm64 -Drop C:\hoge\fuga C:\fuga.txt<br>
+tcm32 -Drop C:\hoge\fuga C:\fuga.txt<br>
+</ul>
+<div class="bar"><b>注意事項</b></div>
+<ul>
+<li>項目は同一フォルダで指定してください</li>
+<li>有効な項目を指定しなかった場合はTablacus ContextMenuのウインドウが表示されます。項目をドラッグ＆ドロップするとドロップした項目のコンテキストメニューを表示します。</li>
+</ul>
+<div class="bar"><b>履歴とソース</b></div>
+<ul>
+<li>
+<a href="history/tcm.html">履歴とソース</a></li>
+</ul>
+<div class="bar"><b>ライセンス</b></div>
+<ul>
+<li>
+<a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
+</li>
+</ul>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Context Menu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="1266665201"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div style="padding: 0px 0px 0px 4px">
+<script type="text/javascript" src="./b.js"></script>
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-248061-1";
+urchinTracker();
+</script>
+</body></html>

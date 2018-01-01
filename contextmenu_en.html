@@ -1,0 +1,127 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="en"><head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Tablacus Context Menu</title>
+<link rel="stylesheet" type="text/css" href="./common.css" />
+<link rel="alternate" hreflang="ja" title="The Japanese version" href="contextmenu.html" />
+<script type="text/javascript" src="./reload.js"></script>
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#8b0000" alink="#ff0000">
+<table width="100%"><tr><td>
+<a href="./">[Softwares]</a>
+</td>
+<td align="right">
+<a href="contextmenu.html">[Japanese]</a>
+</td></tr></table>
+<table width="100%" summary="top" border=0 cellpadding=0 cellspacing=0 class="bar">
+<tr>
+<td align="center">
+<b>Command-line Context Menu<br>Tablacus Context Menu</b>
+</td>
+<td>Author: Gaku<br>
+<a href="http://www.twitter.com/tablacus"><img src="http://twitter-badges.s3.amazonaws.com/twitter-a.png" alt="Follow tablacus on Twitter"/></a>
+</td>
+</tr>
+</table>
+<table><tr><td>
+<small>
+freeware Windows 7/(Vista)/XP/(2000)  32bit(x86 Edition)/64bit(x64 Edition)</small></td><td>
+<div id="fb-root"></div><script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><fb:like href="http://www.eonet.ne.jp/~gakana/tablacus/contextmenu_en.html" send="false" layout="button_count" width="200" show_faces="true" font=""></fb:like>
+</td></tr></table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Context Menu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="1266665201"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<table style="width: 100%; height:80px; border:1px solid black; margin-top: 3; margin-bottom: 3"><tr>
+<td><img src="img/tcm48.png"></td><td><b><big>Tablacus ContextMenu</big></b><br>Release Date: Nov 20, 2013</td>
+<td><b>Version 13.11.20<br><a href="https://github.com/tablacus/TablacusContextMenu/releases/download/13.11.20/tcm131120.cab">Download (55.9KB)</a></b></td>
+<td>
+<a href="http://www.freewarefiles.com/Tablacus-ContextMenu_program_72757.html">mirror(FreewareFiles)</a><br>
+<a href="http://www.vector.co.jp/soft/winnt/util/se501862.html">mirror(Vector)</a></td></tr>
+</tr>
+</table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Context Menu -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="1266665201"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+<div class="bar"><b>Tablacus Context Menu</b></div>
+<ul type="Features">
+<li>Run the context menu from the command line.</li>
+</ul>
+Usage:<br>
+tcm64 [options] Item [Item 2]...<br>
+<ul>
+<li>Run the context menu of 64-bit</li>
+</ul>
+tcm32 [options] Item [Item 2]...<br>
+<ul>
+<li>Run the context menu of 32-bit</li>
+</ul>
+<br>
+Options:<br>
+<table>
+<tr><td>-x</td><td>X-coordinate to display the context menu. The default is the x coordinate of mouse cursor</td></tr>
+<tr><td>-y</td><td>Y-coordinate to display the context menu. The default is the y coordinate of mouse cursor</td></tr>
+<tr><td>-Directory</td><td>Working directory. The default is NULL</td></tr>
+<tr><td>-Parameter</td><td>Parameter. The default is NULL</td></tr>
+<tr><td>-Show</td><td>SW_ values. The default is SW_SHOWNORMAL</td></tr>
+<tr><td>-fMask</td><td>CMIC_MASK_ values</td></tr>
+<tr><td>-Flags</td><td>Optional flags. The default is 0 (CMF_NORMAL)</td></tr>
+<tr><td>-Timer</td><td>Tablacus ContextMenu timer ends after command execution. The default is 1</td></tr>
+<tr><td>-Invoke</td><td>Run the command with the name.</td></tr>
+<tr><td>-Drop</td><td>Right-button Drag-and-drop Menu.</td></tr>
+<tr><td>-grfKeyState</td><td>Drag-and-drop Button state</td></tr>
+</table><br>
+e.g.:<br>
+tcm64 -x 500 -y 200 C:\hoge\fuga c:\hoge\piyo<br>
+tcm32 -x 500 -y 200 C:\hoge\fuga c:\hoge\piyo<br>
+tcm64 -Invoke "*Microsoft Security Essentials*" C:\hoge\fuga<br>
+tcm32 -Invoke "*Microsoft Security Essentials*" C:\hoge\fuga<br>
+tcm64 -Drop C:\hoge\fuga C:\fuga.txt<br>
+tcm32 -Drop C:\hoge\fuga C:\fuga.txt<br>
+</ul><br>
+<div class="bar"><b>Notes</b></div>
+<ul>
+<li>Please specify the item in the same folder.</li>
+<li>If no valid entry window is displayed. And if you drag and drop, perform a context menu.</li>
+</ul>
+<div class="bar"><b>History & Source</b></div>
+<ul>
+<li>
+<a href="history/tcm.html">History & Source</a></li>
+</ul>
+<div class="bar"><b>License</b></div>
+<ul>
+<li>
+<a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
+</li>
+</ul>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ContextMenu! -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="2351724190"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-248061-1";
+urchinTracker();
+</script>
+</body></html>

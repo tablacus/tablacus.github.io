@@ -1,0 +1,133 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Tablacus Shell Susie Plug-in (axshell)</title>
+<link rel="stylesheet" type="text/css" href="./common.css" />
+<!--link rel="alternate" hreflang="en" title="The English version" href="axshell_en.html" /-->
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#8b0000" alink="#ff0000">
+<table width="100%"><td>
+<iframe src="http://www.eonet.ne.jp/~gakana/menu.html" width=468 height=20 border=0 marginwidth=0 marginheight=0 frameborder=0 scrolling="no" class="topmenu">
+<a href="http://www.eonet.ne.jp/~gakana/">[Home]</a>
+</iframe>
+</td><td align="right"><!--a href="axshell_en.html">[English]</a--></td>
+</table>
+<script type="text/javascript" src="./reload.js"></script>
+<table width="100%" summary="top" border=0 cellpadding=0 cellspacing=0 class="bar">
+<tr>
+<td align="center">
+<b>Tablacus Shell Susie Plug-in (axshell.spi/axshell.sph)</b>
+</td>
+<td align="right" class="rate">
+<script type="text/javascript" src="./r.js"></script>
+</td>
+</tr>
+</table>
+<table><tr><td>
+<small>
+フリーウェア・Windows 10/8.1/8/7/Vista/XP  32bit(x86 Edition)/64bit(x64 Edition)</small></td><td>
+</td></tr></table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Script Control -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="4359732404"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<table style="width: 100%; height:80px; border:1px solid black; margin-top: 3; margin-bottom: 3"><tr>
+<td></td><td><b><big>Tablacus Shell Susie Plug-in (axshell)</big></b><br>更新日: 2015年11月4日<br>ウイルススキャン: <a href="https://www.virustotal.com/en/file/c9ffa6bfd8fa0012f1579d72971149d7618b1ea366cd0076bc7eec83598258d3/analysis/1446643161/">VirusTotal</a></td>
+<td><b>Version 1.0.0.0<br><a href="https://github.com/tablacus/TablacusShellSusiePlugin/releases/download/1.0.0.0/axshell_1000.cab">ダウンロード (91.1KB)</a></b></td>
+<td>
+</td></tr>
+</tr>
+</table>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Script Control -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="4359732404"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br><br>
+<div class="bar"><b>Tablacus Shell Susie Plug-in (axshell)</b></div>
+<br>
+エクスプローラの仮想フォルダを書庫と見立てて、仮想フォルダに対応していないソフトでもアクセスできるようにするSusieプラグインです。<br>
+例えば、スマホや携帯のMTP接続やPTP接続のフォルダを読み込むことができるようになります。<br>
+<br>
+<div class="bar"><b>インストールとアンインストール</b></div>
+<br>
+Susieプラグインのフォルダに「axshell.spi」「axshell.sph」を解凍してください。
+<br>
+64ビット版のソフトの場合は「axshell.sph」<br>
+32ビット版のソフトの場合は「axshell.spi」を使用します。<br>
+<br>
+あとは場合によってファイラー等で「_SF」を関連付けして下さい。<br>
+<br>
+例）<br>
+あふw(64ビット版) &S_ARC axshell.sph<br>
+あふw(32ビット版) &S_ARC axshell.spi<br>
+<br>
+※ユニコードのAPIにも対応しています。<br>
+<br>
+Susie、X-Finder、あふw、だいなファイラー、PPxでテストしました。<br>
+※X-Finder、PPxはこのプラグイン使わなくてもエクスプローラの仮想フォルダにアクセス可能ですが...<br>
+<br>
+レジストリに設定を書き込まないのでアンインストールの場合は削除すれば完了です。<br>
+<br>
+<div class="bar"><b>使い方</b></div>
+<br>
+付属の「pc._sf」に入ると「マイ コンピュータ(PC)」が表示されます。<br>
+「desktop._sf」に入ると「デスクトップ」が表示されます。<br>
+フォルダは「フォルダ名._SF」といったように書庫として表示されます。<br>
+MTPデバイスを接続している場合は「マイ コンピュータ(PC)」に「camera._SF」等とそのデバイスの書庫がありますので、その中に入っていって下さい。<br>
+書庫の中の書庫に入れるファイラーの場合はそのままフォルダの様に入って行けます。<br>
+次回から中のフォルダにすぐに移動したい場合は目的のフォルダの「フォルダ名._SF」を普通のフォルダにコピーしておけばOKです。<br>
+<br>
+「._SF」フォルダの構造はユニコードで<br>
+_SF:目的のフォルダのパス<br>
+となっています。<br>
+例えば、「_SF:C:\Windows」の場合は「C:\Windows」の書庫になります。<br>
+<br>
+<div class="bar"><b>履歴</b></div>
+<ul>
+<li>
+<a href="history/axshell.html">履歴</a></li>
+</ul>
+<div class="bar"><b>ソース</b></div>
+<ul>
+<li>
+<a href="https://github.com/tablacus/TablacusShellSusiePlugin">Github</a></li>
+</ul>
+<div class="bar"><b>ライセンス</b></div>
+<ul>
+<li>
+<a href="http://www.opensource.org/licenses/mit-license.php">MIT License</a>
+</li>
+</ul>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Script Control -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3159527702624987"
+     data-ad-slot="4359732404"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<div style="padding: 0px 0px 0px 4px">
+<script type="text/javascript" src="./b.js"></script>
+</div>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-248061-1";
+urchinTracker();
+</script>
+</body></html>
