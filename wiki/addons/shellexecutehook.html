@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Shell execute hook - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/shellexecutehook">[Wiki]</a>
+<h1 id="shell-execute-hook">Shell execute hook</h1>
+<h2 id="function">Function</h2>
+<ol>
+<li><p>Run TE instead of Windows Explorer when:</p>
+<ul>
+<li>you press Win+E</li>
+<li>you run Windows Explorer from:<ul>
+<li>Start Menu</li>
+<li>Task Bar (when pinned)</li>
+<li>Run dialog box (Win+R)</li>
+<li>Command Prompt</li>
+</ul>
+</li>
+<li>an application runs Windows Explorer</li>
+</ul>
+</li>
+<li><p>Run TE to open the folder in a new tab instead of Windows Explorer when:</p>
+<ul>
+<li>you input a folder path in the Run dialog box</li>
+<li>you input “start folder path” in Command Prompt</li>
+<li>an application opens a folder in Windows Explorer</li>
+</ul>
+</li>
+</ol>
+<h2 id="note">Note</h2>
+<ul>
+<li><strong>This add-on uses the registry.</strong></li>
+<li>TE needs not be running when it is invoked this way.</li>
+<li>You can still run Windows Explorer by other ways such as:<ul>
+<li>choose “Computer” from Start Menu</li>
+<li>click Recycle Bin on Desktop</li>
+<li>click a folder shortcut on Desktop or Task Bar</li>
+<li>choose “Open in Explorer” from tab context menu</li>
+</ul>
+</li>
+<li>Running TE from another application may or may not work, depending on the technique used by that application.</li>
+<li>You can use “Open Instead” add-on to handle cases this add-on misses.</li>
+<li>Steps to use (administrator privilege is needed):<ol>
+<li>In the configuration page of the add-on:<ul>
+<li>tick all “Registry” options</li>
+<li>click the “Default” button and reply OK</li>
+<li>tick “Windows Explorer”</li>
+<li>click OK</li>
+</ul>
+</li>
+<li>Your desktop will refresh to complete the configuration.<ul>
+<li>If you do not tick “Windows Explorer”, you will need to restart your computer to complete the configuration.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+
+</body>
+</html>

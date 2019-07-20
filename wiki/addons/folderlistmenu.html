@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Folder list menu - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/folderlistmenu">[Wiki]</a>
+<h1 id="folder-list-menu">Folder list menu</h1>
+<h2 id="function">Function</h2>
+<p>Show a menu of folders listed in a text file</p>
+<h2 id="settings">Settings</h2>
+<p>When installing folder list menu &quot;Folder list menu&quot; is added to type.</p>
+<p><img src="https://github.com/tablacus/TablacusExplorerAddons/wiki/images/folderlistmenu/1.png" alt="Settings"></p>
+<p>Specify a text file in which the folder list is stored as an option.</p>
+<h3 id="basic">Basic</h3>
+<p>menu.cfu</p>
+<pre><code>C:\Program Files
+C:\Windows
+C:\Windows\System32
+</code></pre><p><img src="https://github.com/tablacus/TablacusExplorerAddons/wiki/images/folderlistmenu/2.png" alt="Display name"></p>
+<h3 id="display-name">Display name</h3>
+<p>menu.cfu</p>
+<pre><code>C:\Program Files
+#EXTINF:-,Windows folder
+C:\Windows
+System folder    C:\Windows\System32
+</code></pre><p><img src="https://github.com/tablacus/TablacusExplorerAddons/wiki/images/folderlistmenu/3.png" alt="Basic"></p>
+<h3 id="hierarchical-menu">Hierarchical menu</h3>
+<p>menu.cfu</p>
+<pre><code>C:\Program Files
+C:\Program Files
+#EXTINF:-,Windows/Windows folder
+C:\Windows
+Windows/System folder    C:\Windows\System32
+</code></pre><p><img src="https://github.com/tablacus/TablacusExplorerAddons/wiki/images/folderlistmenu/4.png" alt="Hierarchical menu"></p>
+<h3 id="splitter">Splitter</h3>
+<p>menu.cfu</p>
+<pre><code>C:\Program Files
+-
+#EXTINF:-,Windows/Windows folder
+C:\Windows
+Windows/System folder    C:\Windows\System32
+</code></pre><h3 id="icon">Icon</h3>
+<p>menu.cfu</p>
+<pre><code>#EXTIMG:C:\bin\te\menu\xf.png,16
+C:\Program Files
+#EXTIMG:...
+C:\
+</code></pre><h3 id="execute">Execute</h3>
+<p>menu.cfu</p>
+<pre><code>`calc.exe`
+</code></pre><h3 id="javascript">JavaScript</h3>
+<p>menu.cfu</p>
+<pre><code>JavaScript javascript:alert(1);
+</code></pre><pre><code>#EXTINF:-,JavaScript2
+javascript:alert(&quot;OK&quot;);
+</code></pre>
+</body>
+</html>

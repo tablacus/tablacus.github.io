@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Folder settings - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/foldersettings">[Wiki]</a>
+<h1 id="folder-settings">Folder settings</h1>
+<h2 id="function">Function</h2>
+<p>Apply a specific view to a specific folder based on folder name pattern
+Memorize listview settings and automatically restores them. A very powerful help for daily work.</p>
+<p>By default, TE adheres to the current tab view when you navigate. This add-on lets TE adhere to the rules you specified, regardless of the currently used view.</p>
+<p>Windows Explorer can save this settings too, but with this addon feel free to manually fine tune, <a href="https://github.com/tablacus/TablacusExplorer/wiki/Filters-and-Queries">filter with wildcards</a> (e.g. C:\Windows*) and add many more presets (e.g. Tiles view with picture dimensions for your picture folders, audio details for your music folders ...)</p>
+<h2 id="usage">Usage</h2>
+<ol>
+<li>Design things like column selection, width of columns, view mode, column order, sort order, zoom level (Ctrl+MouseWheel)etc. ...</li>
+<li>Open the <em>Options</em> dialog and navigate to of add-on <em>Folder Settings</em> select <em>Use current folder view</em></li>
+<li>Accept with <em>Ok</em> button</li>
+<li>You get the current full path as filter in list (left and top right) and all saved settings in listbox (middle right)</li>
+<li>You can optionally change the full path in the <em>Filter</em> field into a generic filter with wildcards to make it match several folders of the same type, rather that just the current one.</li>
+<li>Don&#39;t forget to accept with <em>Ok</em> button on bottom.</li>
+</ol>
+<h3 id="recommended-procedures">Recommended procedures</h3>
+<ol>
+<li>First set up a view for general file folders (use <code>*</code> as <a href="https://github.com/tablacus/TablacusExplorer/wiki/Filters-and-Queries">filter</a>).</li>
+<li>Then set up the views for common exceptions.</li>
+<li>Lastly setup specific views for particular cases</li>
+</ol>
+<h3 id="notes">Notes</h3>
+<ul>
+<li>Separate multiple filter rules per entry with a semicolon <code>;</code> like `<em>Photos</em>;Images*;D:\Pictures;Graphics\Media**</li>
+<li>To include only subfolders use <code>E:\Folder\*</code></li>
+<li>To exclude subfolders use <code>E:\Folder</code></li>
+<li>To include folder and subfolders use <code>E:\Folder;E:\Folder\*</code></li>
+<li>In case of multiple conflicting entries, if a folder matches multiple filters the last matching one in list order takes precedence. Filters are analyzed from top, last matching entry overrides all previous ones.</li>
+</ul>
+<h2 id="config-file">Config file</h2>
+<p><code>foldersettings.xml</code></p>
+<h2 id="similar-add-ons">Similar Add-ons</h2>
+<ul>
+<li><a href="./remember.html">Remember folder view settings</a></li>
+<li><a href="./takeoverfoldersettings.html">Take over folder view settings</a></li>
+</ul>
+<hr>
+<h1 id="japanese">Japanese</h1>
+<h2 id="-">フォルダ設定</h2>
+<p> 任意のフォルダを常に同じ表示になるように設定する。
+ (メニュー＞ツール＞このフォルダーのカスタマイズの使用には、このアドオンが必要)</p>
+<p>:link:<a href="http://tablacus.hatenablog.com/entry/2015/01/29/210111">フォルダ設定の使い方</a><br>:link:<a href="http://tablacus.hatenablog.com/entry/2015/02/05/225055">カラムの保存方法の選択</a></p>
+
+</body>
+</html>

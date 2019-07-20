@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Remember folder view settings - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/remember">[Wiki]</a>
+<h1 id="remember-folder-view-settings">Remember folder view settings</h1>
+<h2 id="function">Function</h2>
+<p>Remember the view of each folder when you browse, like the default behavior of Windows.</p>
+<h2 id="options">Options</h2>
+<p><img src="https://github.com/tablacus/TablacusExplorerAddons/wiki/images/remember/1.png" alt="Remember folder view settings"></p>
+<h2 id="config-file">Config file</h2>
+<p><code>remember.xml</code></p>
+<h2 id="advanced">Advanced</h2>
+<p>Options under advanced determine how properties columns references are saved.
+It is only relevant if you use Tablacus portably on different computers, share configurations across in different environments, or use it under multiple operating systems, otherwise it makes little difference.</p>
+<ul>
+<li>Normal</li>
+<li>Path</li>
+<li>Key</li>
+</ul>
+<h3 id="normal">Normal</h3>
+<p>Save columns by Name.</p>
+<h4 id="example">Example</h4>
+<ul>
+<li><code>Size</code></li>
+<li><code>Date modified</code></li>
+</ul>
+<h4 id="pros">Pros</h4>
+<p>Simple</p>
+<h4 id="cons">Cons</h4>
+<p>Changes for different languages.</p>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>German</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Size</code></td>
+<td><code>Größe</code></td>
+</tr>
+<tr>
+<td><code>Date modified</code></td>
+<td><code>Änderungsdatum</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="path">Path</h3>
+<p>Save columns by Path (Cannonical Name).</p>
+<h4 id="example">Example</h4>
+<ul>
+<li><code>System.Size</code></li>
+<li><code>System.DateModified</code></li>
+</ul>
+<h4 id="pros">Pros</h4>
+<p>It&#39;s same even if language is different.</p>
+<h4 id="cons">Cons</h4>
+<p>It&#39;s different for each OS like Windows XP / Vista or later.</p>
+<table>
+<thead>
+<tr>
+<th>Vista or later</th>
+<th>XP</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>System.Size</code></td>
+<td><code>Size</code></td>
+</tr>
+<tr>
+<td><code>System.DateModified</code></td>
+<td><code>Write</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="key">Key</h3>
+<p>Save columns by Key (Property key).</p>
+<h4 id="example">Example</h4>
+<ul>
+<li><code>{B725F130-47EF-101A-A5F1-02608C9EEBAC} 12</code></li>
+<li><code>{B725F130-47EF-101A-A5F1-02608C9EEBAC} 14</code></li>
+</ul>
+<h4 id="pros">Pros</h4>
+<p>It&#39;s the same in different environment.</p>
+<h4 id="cons">Cons</h4>
+<p>It looks long and complicated.</p>
+<h2 id="similar-add-ons">Similar Add-ons</h2>
+<ul>
+<li><a href="./takeoverfoldersettings.html">Take over folder view settings</a></li>
+<li><a href="./foldersettings.html">Folder settings</a></li>
+</ul>
+<hr>
+<h1 id="japanese">Japanese</h1>
+<h2 id="-">フォルダの表示設定を覚える</h2>
+<p>フォルダの表示設定を変更した際に、その変更内容を自動で覚えていく。</p>
+
+</body>
+</html>

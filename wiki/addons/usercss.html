@@ -1,0 +1,445 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/usercss">[Wiki]</a>
+<h2 id="user-style-sheet">User style sheet</h2>
+<h2 id="function">Function</h2>
+<p>Customize TE’s appearance using CSS</p>
+<h2 id="note">Note</h2>
+<p>This add-on is for advanced users.</p>
+<h2 id="config-file">Config file</h2>
+<p><code>user.css</code></p>
+<h2 id="selectors">Selectors</h2>
+<table>
+<thead>
+<tr>
+<th>Selector</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.tab</code>, <code>.tab1</code>, <code>.tab#</code></td>
+<td>Tabs</td>
+</tr>
+<tr>
+<td><code>.activetab</code></td>
+<td>Active tab</td>
+</tr>
+<tr>
+<td><code>.breadcrumb</code>,</td>
+<td>Breadcrumb bar both standalone and Inner Breadcrumb</td>
+</tr>
+<tr>
+<td><code>.button</code></td>
+<td>Toolbar buttons (includes breadcrumbs clickable items)</td>
+</tr>
+<tr>
+<td>``</td>
+<td></td>
+</tr>
+<tr>
+<td><code>#MenuFavorites</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>#toolbar</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Left</code></td>
+<td>Main top toolbar (File, Edit View, Favorites Tools, Help menus)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Center</code></td>
+<td>Top toolbar centered (immediately right of File, Edit View, Favorites Tools, Help menus)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Right</code></td>
+<td>Top toolbar right (right aligned to File, Edit View, Favorites Tools, Help menus)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar1Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar2Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar2Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar2Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar3Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar3Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar3Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar4Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar4Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar4Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar5Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar5Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#ToolBar5Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#client</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#leftbar</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#leftbarT</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#LeftBar1</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#LeftBar2</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#LeftBar3</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#leftsplitter</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#Background</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#rightsplitter</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#rightbar</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#rightbarT</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#RightBar1</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#RightBar2</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#RightBar3</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#bottombar</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar1Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar1Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar1Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar2Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar2Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar2Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar3Left</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar3Center</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#BottomBar3Right</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#Panel</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#None</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+<tr>
+<td><code>#Size</code></td>
+<td>Toolbar (See image below)</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://i.stack.imgur.com/q4X0U.png" alt="Toolbar locations"></p>
+<h2 id="examples">Examples</h2>
+<ul>
+<li>Hiding the Favorites menu from main toolbar <code>#MenuFavorites { display: none; }</code></li>
+</ul>
+<h3 id="firefox-like-tabs">Firefox-Like Tabs</h3>
+<p>Firefox like rounded tabs</p>
+<p>Source (in Japanese): <a href="https://qiita.com/nocd5/items/af062f7b06d4cd3b8b18#%E5%A4%89%E6%9B%B4%E7%82%B9">https://qiita.com/nocd5/items/af062f7b06d4cd3b8b18#%E5%A4%89%E6%9B%B4%E7%82%B9</a></p>
+<p><img src="https://camo.qiitausercontent.com/8cac74f00cefcd7e1342add0dfe83ad0790c4e58/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f35323439332f33626165353937612d356535302d353366652d616231352d3132366636353739333963372e706e67" alt="Firefox like Rounded Tabs"></p>
+<pre><code>.tab, .tab2, .tab3,
+.tab:hover, .tab2:hover, .tab3:hover {
+  box-shadow: none;
+}
+
+.tab0 {
+  padding: 3px 0 0 12px;
+  background-color: ActiveCaption;
+}
+
+.tab, .tab2, .tab3 {
+  position: relative;
+  background: transparent;
+  border-width: 0 0.1px;
+  border-style: solid;
+  border-color: transparent;
+  padding: 0 12px;
+  opacity: 1 !important;
+}
+
+.activetab {
+  position: relative;
+  background-color: #fff;
+  border-width: 0 0.1px;
+  border-color: #fff;
+  border-top-left-radius: 12px calc(2em - 12px);
+  border-top-right-radius: 12px calc(2em - 12px);
+  margin: 0;
+  padding: 0 12px;
+  height: 2em;
+}
+
+.activetab:before,
+.activetab:after {
+  content: &quot;&quot;;
+  position: absolute;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  z-index: -1;
+}
+.activetab:before {
+  left: 0;
+  background-image: radial-gradient(
+    farthest-side at top right,
+    transparent 100%,
+    #fff 100%
+  );
+  transform: scale(-1, 1);
+  transform-origin: left;
+}
+.activetab:after {
+  right: 0;
+  background-image: radial-gradient(
+    farthest-side at top left,
+    transparent 100%,
+    #fff 100%
+  );
+  transform: scale(-1, 1);
+  transform-origin: right;
+}
+
+.tab:hover,
+.tab2:hover {
+  position: relative;
+  border-width: 0 0.1px;
+  border-style: solid;
+  border-color: #d0e0e9;
+  border-top-left-radius: 12px calc(2em - 12px);
+  border-top-right-radius: 12px calc(2em - 12px);
+  background-color: #d0e0e9;
+  z-index:0 !important;
+}
+
+.tab:hover:before,
+.tab:hover:after,
+.tab2:hover:before,
+.tab2:hover:after {
+  content: &quot;&quot;;
+  position: absolute;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  z-index: -1;
+}
+.tab:hover:before,
+.tab2:hover:before {
+  left: 0;
+  background-image: radial-gradient(
+    farthest-side at top right,
+    transparent 100%,
+    #d0e0e9 100%
+  );
+  transform: scale(-1, 1);
+  transform-origin: left;
+}
+.tab:hover:after,
+.tab2:hover:after {
+  right: 0;
+  background-image: radial-gradient(
+    farthest-side at top left,
+    transparent 100%,
+    #d0e0e9 100%
+  );
+  transform: scale(-1, 1);
+  transform-origin: right;
+}
+</code></pre><h3 id="chrome-like-tabs">Chrome Like tabs</h3>
+<p>Chrome like slanted tabs</p>
+<p>Source (in Japanese): <a href="https://qiita.com/nocd5/items/af062f7b06d4cd3b8b18#%E7%B5%90%E5%B1%80">https://qiita.com/nocd5/items/af062f7b06d4cd3b8b18#%E7%B5%90%E5%B1%80</a></p>
+<p><img src="https://camo.qiitausercontent.com/ac4fbc5fa6ca361be83f8c8f406eecc5341d0109/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e616d617a6f6e6177732e636f6d2f302f35323439332f34393831363638612d383163612d316636642d623962362d3830363862366232643737382e706e67" alt=""></p>
+<pre><code>.tab, .tab2, .tab3,
+.tab:hover, .tab2:hover, .tab3:hover {
+  box-shadow: none;
+}
+
+.tab0 {
+  padding: 3px 0 0 12px;
+  background-color: ActiveCaption;
+}
+
+.tab, .tab2, .tab3 {
+  position: relative;
+  background: transparent;
+  border: 0;
+  padding: 0 12px;
+  opacity: 1;
+}
+
+.activetab {
+  position: relative;
+  background-color: #fff;
+  border: 0;
+  padding: 0 2px;
+  margin: 0 10px;
+  height: 2em;
+}
+
+.activetab:before,
+.activetab:after {
+  content: &quot;&quot;;
+  position: absolute;
+  background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M24%200C9%200%2015%2024%200%2024h25V0h-1z%22%2F%3E%3C%2Fsvg%3E&quot;);
+  bottom: 0;
+  width: 25px;
+  height: 24px;
+}
+.activetab:before {
+  left: -24px;
+}
+.activetab:after {
+  right: 1px;
+  transform: scaleX(-1);
+  transform-origin: right;
+}
+
+.tab:hover,
+.tab2:hover,
+.tab3:hover {
+  position: relative;
+  background-color: #d0e0e9;
+  border: 0;
+  padding: 0 2px;
+  margin: 0 10px;
+}
+
+.tab:hover:before,
+.tab:hover:after,
+.tab2:hover:before,
+.tab2:hover:after,
+.tab3:hover:before,
+.tab3:hover:after {
+  content: &quot;&quot;;
+  position: absolute;
+  background-image: url(&quot;data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill%3D%22%23d0e0e9%22%20d%3D%22M24%200C9%200%2015%2024%200%2024h25V0h-1z%22%2F%3E%3C%2Fsvg%3E&quot;);
+  bottom: 0;
+  width: 25px;
+  height: 24px;
+}
+.tab:hover:before,
+.tab2:hover:before,
+.tab3:hover:before {
+  left: -24px;
+}
+.tab:hover:after,
+.tab2:hover:after,
+.tab3:hover:after {
+  right: 1px;
+  transform: scaleX(-1);
+  transform-origin: right;
+}
+</code></pre>
+</body>
+</html>
