@@ -5,10 +5,13 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <title>アドオンで拡張できるタブ型ファイラー Tablacus Explorer</title>
 <script async type="text/javascript" src="./reload.js"></script>
-<link rel="stylesheet" type="text/css" href="./common.css" />
-<link rel="alternate" hreflang="en" title="The English version" href="explorer_en.html" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link rel="alternate" hreflang="en" title="The English version" href="explorer_en.html">
 </head>
 <body bgcolor="#ffffff" text="#000000" link="#0000cc" vlink="#8b0000" alink="#ff0000">
+<div class="container-fluid">
+<div class="row">
+<div class="col-12">
 <table width="100%"><tr><td>
 <iframe src="./menu.html" width=468 height=20 border=0 marginwidth=0 marginheight=0 frameborder=0 scrolling="no" class="topmenu">
 <a href="//www.eonet.ne.jp/~gakana/">[Home]</a>
@@ -17,26 +20,27 @@
 </table>
 <table width="100%" summary="top" border=0 cellpadding=0 cellspacing=0 class="bar0">
 <tr>
-<td align="center">
-<b>アドオンで拡張できるエクスプローラ互換のタブ型ファイラー<br>Tablacus Explorer</b>
+<td>
+<b>Tablacus Explorer</b>&nbsp;<a href="//tablacus.github.io/TablacusExplorerAddons/">アドオン</a>
 </td>
 <td align="right" class="rate">
-<a href="./privacy_jp">プライバシーポリシー</a>
+<a href="./privacy_jp" class="btn btn-info btn-sm">プライバシーポリシー</a>
 </td>
 </tr>
 </table>
-<table class="dl"><tr><td class="icon"><img src="img/te48.png" align="left"></td>
-<td><table width="100%"><tr>
-<td nowrap><b><big>Tablacus Explorer</big></b><br><br></td></tr><tr>
-<td><b>バージョン <span id="ver">20.6.24</span><br><br><a href="https://github.com/tablacus/TablacusExplorer/releases/download/20.6.24/te200624.zip" id="dl">ダウンロード (<span id="size">601.7KB</span>)</a></b></td></tr><tr><td><br>
-更新日 : <span id="date">2020年6月24日</span>
-</td></tr>
-</table></td>
-<td>
-<b>ウイルススキャン</b><br>
+<div class="mx-auto col-12 text-center">
+<img src="img/te48.png"><br><br>
+アドオンで拡張できるエクスプローラ互換のタブ型ファイラー<br>
+<span class="h1">Tablacus Explorer</span><br><br>
+<a class="btn btn-primary btn-lg" href="https://github.com/tablacus/TablacusExplorer/releases/download/20.6.24/te200624.zip" id="dl">ダウンロード (<span id="size">601.7KB</span>)</a><br>
+バージョン <span id="ver">20.6.24</span>&nbsp;更新日 : <span id="date">2020年6月24日</span><br>
+Windows用 10/8.1/8/7/Vista/XP 32bit(x86 Edition)/64bit(x64 Edition)<br>
+<a class="btn btn-success btn-sm" data-toggle="collapse" href="#collapseVirusScan" role="button" aria-expanded="false" aria-controls="collapseVirusScan">ウイルススキャン</a>
+<div class="collapse" id="collapseVirusScan">
 <a href="https://www.virustotal.com/gui/file/72eda92c50c40e5509247ba6d287b23c8853ea18a1dcd991ce42c589f31cea1b/detection" id="virustotal">VirusTotal</a>
-<br>
-<b>ミラーダウンロード</b><br />
+</div>
+<a class="btn btn-secondary btn-sm" data-toggle="collapse" href="#collapseMirror" role="button" aria-expanded="false" aria-controls="collapseVirusScan">ミラーダウンロード</a>
+<div class="collapse" id="collapseMirror">
 <a href="https://www.freewarefiles.com/Tablacus-Explorer_program_68144.html">FreewareFiles</a><br>
 <!--a href="https://www.giga.de/downloads/tablacus-explorer/">GIGA SOFTWARE</a><br-->
 <a href="https://www.majorgeeks.com/files/details/tablacus_explorer.html">MAJOR GEEKS</a><br>
@@ -46,9 +50,9 @@
 <a href="https://kubadownload.com/app/tablacus-explorer">KubaDownload.com</a><br>
 <a href="https://tablacus-explorer.en.lo4d.com/windows">LO4D.com</a><br>
 <a href="https://maddownload.com/utilities/file-managers/tablacus-explorer/">MadDownload.com</a><br>
-</td>
-</tr>
-</table>
+</div>
+
+</div>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Tablacus Explorer 1 -->
 <ins class="adsbygoogle"
@@ -59,8 +63,7 @@
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
-<div class="alert">
-<b>重要なお知らせ (2017/4/5)</b><br>
+<div class="col-12 text-white bg-danger"><b>重要なお知らせ (2017/4/5)</b><br>
 Tablacus Explorer 17.3.30以前にスクリプトインジェクションの脆弱性が発見されました。<br>
 悪意のあるFTPサイトを開いた場合、任意のスクリプトが実行されてしまうというものです。<br>
 該当バージョンをお使いの方は、すみやかに対策されたバージョンにアップデートしてください。<br>
@@ -68,7 +71,7 @@ Tablacus Explorer 17.3.30以前にスクリプトインジェクションの脆�
 <a href="//jvn.jp/jp/JVN64451600/">JVN#64451600</a>
 </div>
 <br>
-<div class="bar"><b>Tablacus Explorerの特徴</b></div>
+<div class="col-12 text-white bg-info"><b>Tablacus Explorerの特徴</b></div>
 <ul type="Features">
 <li>エクスプローラにタブを付けたようなタブファイラー</li>
 <li><a href="//tablacus.github.io/TablacusExplorerAddons/">アドオン</a>で拡張可能</li>
@@ -81,13 +84,12 @@ Tablacus Explorer 17.3.30以前にスクリプトインジェクションの脆�
 <li>Visial Basic、Visual C++や.NET Framework等のランタイムのインストールが不要で圧縮ファイルのファイルを解凍するだけで動作します。</li>
 <li>USBにカスタマイズしたエクスプローラを入れて持ち歩きたい等、レジストリを変更せずにエクスプローラをカスタマイズしたい方に</li>
 </ul>
-OS: Windows 10/8.1/8/7/Vista/XP<!--/(2000+<a href="//www.microsoft.com/en-us/download/details.aspx?id=18909">gdiplus.dll</a>)--> 32bit(x86 Edition)/64bit(x64 Edition)<br>
 <br>
 <a href="img/te.png"><img src="img/te.png" width="30%" align="left" class="ss"></a>
 <a href="img/te4.png"><img src="img/te4.png" width="30%" align="left" class="ss"></a>
 <a href="img/te3.png"><img src="img/te3.png" width="30%" align="left" class="ss"></a>
 <br clear="all"><br>
-<div class="bar"><b>セットアップ</b></div>
+<div class="col-12 text-white bg-info"><b>セットアップ</b></div>
 <ul type="Set up">
 <li>ZIPファイルをインストールしたいフォルダに展開してください。</li>
 <li>Tablacus Explorerを実行 (32ビット環境 TE32.exe / 64ビット環境 TE64.exe)</li>
@@ -105,7 +107,7 @@ OS: Windows 10/8.1/8/7/Vista/XP<!--/(2000+<a href="//www.microsoft.com/en-us/dow
 Windows Fall Creators Update使用の場合はマウスで複数選択時にマウスカーソルが端に飛ぶバグ対策のアドオンがありますのでインストールして使用してください。<br>
 Windows Creators Update使用の場合は表示が乱れるバグ対策のアドオンがありますのでインストールして使用してください。<br>
 <br>
-<div class="bar"><b>アンインストール</b></div>
+<div class="col-12 text-white bg-info"><b>アンインストール</b></div>
 <ul>
 <li>インストールしたフォルダから削除してください。</li>
 </ul>
@@ -113,7 +115,7 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <ul>
 <li>「%AppData%\tablacus」も削除してください。</li>
 </ul>
-<div class="bar"><b>アドオン</b></div>
+<div class="col-12 text-white bg-info"><b>アドオン</b></div>
 <ul>
 <li>
 <a href="//tablacus.github.io/TablacusExplorerAddons/">アドオン</a></li>
@@ -124,7 +126,7 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <li>
 <a href="//github.com/tablacus/TablacusExplorerAddons/wiki">Add-ons wiki</a></li>
 </ul>
-<div class="bar"><b>他のアドオン</b></div>
+<div class="col-12 text-white bg-info"><b>他のアドオン</b></div>
 <ul>
 <li>
 <a href="//parthenontemple.tumblr.com/post/84431768798/tablacus-explorer-9-zip">【Tablacus Explorerアドオン】分割 - 9画面対応版 (zip)</a>
@@ -151,12 +153,12 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <a href="https://github.com/eamatt/TablacusExplorer-Addons">Tablacus Explorer Add-ons (背景色で色分け)</a>
 </li>
 </ul>
-<div class="bar"><b>アドオンのインストール方法</b></div>
+<div class="col-12 text-white bg-info"><b>アドオンのインストール方法</b></div>
 <ul>
 <li>オプションのアドオン→アドオンの入手...からインストールできます。</li>
 <li>アドオンのインストールに失敗する場合は<a href="//www.7-zip.org/">7-Zip</a>か<a href="//chitora.com/lhaz.html">Lhaz</a>を入手して、ツール→オプション→アドオンタブを開いて「解凍」のアドオンを有効化して、「解凍」のアドオンのオプションから7-ZipかLhazを使用するように設定して下さい。</li>
 </ul>
-<div class="bar"><b>カスタマイズ</b></div>
+<div class="col-12 text-white bg-info"><b>カスタマイズ</b></div>
 <ul>
 <li><a href="customize/">カスタマイズ</a></li>
 <li><a href="customize/rightclick/">右クリック</a></li>
@@ -165,7 +167,7 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <li><a href="customize/toolbar/">ツールバー</a></li>
 <li><a href="customize/association/">独自関連付け</a></li>
 </ul>
-<div class="bar"><b>小技</b></div>
+<div class="col-12 text-white bg-info"><b>小技</b></div>
 <ul>
 <li><a href="//tablacus.hatenablog.com/entry/2015/01/19/010512">総ファイル サイズ（フォルダサイズ）</a></li>
 <li><a href="//tablacus.hatenablog.com/entry/2015/02/10/002438">ラベル機能</a></li>
@@ -175,7 +177,7 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <li><a href="//tablacus.hatenablog.com/entry/2015/06/04/223939">子階層（サブメニュー）の作り方</a></li>
 <li><a href="//tablacus.hatenablog.com/entry/2015/08/16/233341">独自関連付け・マウス・キーをメニューで選ぶ</a></li>
 </ul>
-<div class="bar"><b>言語ファイル</b></div>
+<div class="col-12 text-white bg-info"><b>言語ファイル</b></div>
 <table border="1" style="margin: 24px">
 <tr><td>Language</td><td>Author</td></tr>
 <tr><td><a href="lang/de.zip">Deutsch / German</a></td><td>LightTempler</td></tr>
@@ -192,35 +194,35 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <tr><td><a href="lang/zh.zip">正體中文 / Traditional Chinese</a></td><td>風逸蘭</td></tr>
 <tr><td><a href="lang/zh_cn.zip">简体中文 / Simplified Chinese</a></td><td>秋寥</td></tr>
 </table>
-<div class="bar"><b>ちょっとしたスクリプト</b></div>
+<div class="col-12 text-white bg-info"><b>ちょっとしたスクリプト</b></div>
 <ul>
 <li>
 <a href="//gist.github.com/tablacus">ちょっとしたスクリプト</a></li>
 </ul>
-<div class="bar"><b>アドオン開発者向けの情報</b></div>
+<div class="col-12 text-white bg-info"><b>アドオン開発者向けの情報</b></div>
 <ul>
 <li>
 <a href="http://www.eonet.ne.jp/~gakana/tablacus/objects/">Tablacus Explorer オブジェクト一覧</a></li>
 </ul>
-<div class="bar"><b>履歴</b></div>
+<div class="col-12 text-white bg-info"><b>履歴</b></div>
 <ul>
 <li>
 <a href="https://github.com/tablacus/TablacusExplorer/releases">最近の更新 (17.5.24 以降)</a></li>
 <li>
 <a href="history/">過去の履歴</a></li>
 </ul>
-<div class="bar"><b>ソース</b></div>
+<div class="col-12 text-white bg-info"><b>ソース</b></div>
 <ul>
 <li>
 <a href="//github.com/tablacus/TablacusExplorer">GitHub</a></li>
 </ul>
-<div class="bar"><b>ライセンス</b></div>
+<div class="col-12 text-white bg-info"><b>ライセンス</b></div>
 <ul>
 <li>
 <a href="//www.opensource.org/licenses/mit-license.php">MIT License</a>
 </li>
 </ul>
-<div class="bar"><b>Tablacus Explorerを紹介して頂いているページ</b></div>
+<div class="col-12 text-white bg-info"><b>Tablacus Explorerを紹介して頂いているページ</b></div>
 <ul>
 <li>
 <a href="https://55life555.blog.fc2.com/blog-entry-3026.html">人生に出会う7WAYS＋α ＞ Tablacus Explorer を自分好みにカスタマイズ -- 前半</a> <a href="https://55life555.blog.fc2.com/blog-entry-3027.html">後半</a>
@@ -256,7 +258,7 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <a href="//www.gigafree.net/utility/filer/Tablacus-Explorer.html">ｋ本的に無料ソフト・フリーソフト &gt; 無料ソフト・フリーソフト TOP &gt; ユーティリティ総合 &gt; ファイル管理・ファイルマネージャー &gt; Tablacus Explorer</a>
 </li>
 </ul>
-<div class="bar">
+<div class="col-12">
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <!-- Tablacus Explorer 3 -->
 <ins class="adsbygoogle"
@@ -271,4 +273,9 @@ Windows Creators Update使用の場合は表示が乱れるバグ対策のアド
 <div style="padding: 0px 0px 0px 4px">
 <script type="text/javascript" src="./b.js"></script>
 </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </body></html>
