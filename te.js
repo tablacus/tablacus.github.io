@@ -8,7 +8,9 @@ function ReadVersion(strID)
 			if (typeof(xmlobj.onload) != "undefined") {
 				xmlobj.onload = function() {
 					var json = JSON.parse(xmlobj.responseText)
-					document.getElementById(strID).innerHTML = 'Version ' + json.tag_name;
+					if (json.tag_name) {
+						document.getElementById(strID).innerHTML = 'Version ' + json.tag_name;
+					}
 				}
 			} else {
 				xmlobj.onreadystatechange = function() 
@@ -16,7 +18,9 @@ function ReadVersion(strID)
 					if (xmlobj.readyState == 4) {
 						if (xmlobj.status == 200) {
 							var json = JSON.parse(xmlobj.responseText)
-							document.getElementById(strID).innerHTML = 'Version ' + json.tag_name;
+							if (json.tag_name) {
+								document.getElementById(strID).innerHTML = 'Version ' + json.tag_name;
+							}
 						}
 					}
 				}
