@@ -12,7 +12,7 @@ CalcVersion = function (s) {
 var ean = CalcVersion(ea);
 if (ean > CalcVersion(document.getElementById("ver").innerHTML)) {
 	var dl = document.getElementById("dl").innerHTML.replace(/\(.*/, "");
-	var str = /[ァ-ヶ]/.test(dl) ? "アーリーアクセス版 " : "Early Access Version ";
+	var str = /[ァ-ヶ]/.test(dl) ? "アーリーアクセス版 " : "Early Access Edition ";
 	var s = '<a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseEA" role="button" aria-expanded="false" aria-controls="collapseEA">' + str + ea + '</a>';
 	s += '<div class="collapse" id="collapseEA">';
 	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/tag/' + ea + '">GitHub</a><br>';
