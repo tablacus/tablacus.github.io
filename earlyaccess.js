@@ -1,4 +1,4 @@
-var ea = "21.2.21";
+var ea = "21.2.27";
 
 CalcVersion = function (s) {
 	var r = 0;
