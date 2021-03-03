@@ -38,7 +38,7 @@ Memorize listview settings and automatically restores them. A very powerful help
 </ol>
 <h3 id="notes">Notes</h3>
 <ul>
-<li>Separate multiple filter rules per entry with a semicolon <code>;</code> like `<em>Photos</em>;Images*;D:\Pictures;Graphics\Media**</li>
+<li>Separate multiple filter rules per entry with a semicolon <code>;</code> like <code>*Photos*;Images\*;D:\Pictures;Graphics\Media*</code></li>
 <li>To include only subfolders use <code>E:\Folder\*</code></li>
 <li>To exclude subfolders use <code>E:\Folder</code></li>
 <li>To include folder and subfolders use <code>E:\Folder;E:\Folder\*</code></li>
@@ -46,6 +46,8 @@ Memorize listview settings and automatically restores them. A very powerful help
 </ul>
 <h2 id="config-file">Config file</h2>
 <p><code>foldersettings.xml</code></p>
+<h2 id="quickly-access-settings-">Quickly access settings.</h2>
+<p>If you find yourself frequently setting up folder view settings, and need a convenient way to quickly access this addon settings you can set up a new menu entry or toolbar button to access them by adding a new entry to the desired menu or toolbar, setting it to <em>JScript</em> and under options entering <code>AddonOptions(&quot;foldersettings&quot;)</code></p>
 <h2 id="similar-add-ons">Similar Add-ons</h2>
 <ul>
 <li><a href="./remember.html">Remember folder view settings</a></li>

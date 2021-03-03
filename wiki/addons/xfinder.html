@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>X-Finder - Tablacus Explorer Add-on</title>
+<link rel="stylesheet" type="text/css" href="../../common.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-3159527702624987",
+          enable_page_level_ads: true
+     });
+</script>
+</head>
+<body>
+<a href="./">[Up]</a> <a href="https://github.com/tablacus/TablacusExplorerAddons/wiki/xfinder">[Wiki]</a>
+<h1 id="x-finder">X-Finder</h1>
+<p><em>(This is a stub page, more info will be added)</em></p>
+<p>X-Finder is an older file management software previously <a href="https://github.com/tablacus">created by Gaku</a>.</p>
+<p>X-Finder add-on allows you to use the built-in commands of X-Finder.</p>
+<p><a href="https://www.eonet.ne.jp/~gakana/xf.html">X-Finder&#39;s instructions</a> are in Japanese only.</p>
+<h2 id="usage">Usage</h2>
+<p>The X-Finder add-on exposes a lot of variables that can be used elsewhere throughout Tablacus in menus, paths and scripting</p>
+<h2 id="variables">Variables</h2>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>%X-Finder%</code></td>
+<td>Current folder where Tablacus Explorer is installed and running from (for portable use)</td>
+</tr>
+<tr>
+<td><code>%Focused%</code></td>
+<td>Currently focused item path</td>
+</tr>
+<tr>
+<td><code>%FocusedName%</code></td>
+<td>Currently focused item name (except extension)</td>
+</tr>
+<tr>
+<td><code>%Other%</code></td>
+<td>Other folder (for split pane)</td>
+</tr>
+<tr>
+<td><code>%SendTo%</code></td>
+<td>Send To menu items path</td>
+</tr>
+<tr>
+<td><code>%FileContents%</code></td>
+<td>File contents of currently focused item</td>
+</tr>
+<tr>
+<td><code>%Clipboard%</code></td>
+<td>Clipboard</td>
+</tr>
+<tr>
+<td><code>%Clipboard1%</code></td>
+<td>Clipboard (Except line breaks)</td>
+</tr>
+<tr>
+<td><code>%Attrib%</code></td>
+<td>Attributes of currently focused item</td>
+</tr>
+<tr>
+<td><code>%TabName%</code></td>
+<td>Current tab name</td>
+</tr>
+<tr>
+<td><code>%TabColor%</code></td>
+<td>Current tab color</td>
+</tr>
+<tr>
+<td><code>%DateTime:date time format% (%DateTime:yyyyMMddHHmmss%)</code></td>
+<td>Date time string of now</td>
+</tr>
+<tr>
+<td><code>%TimeStamp:date time format% (%TimeStamp:yyyyMMddHHmmss%)</code></td>
+<td>Date time currently focused item</td>
+</tr>
+<tr>
+<td><code>%inputdata%</code></td>
+<td>For external command &quot;Input:&quot; and &quot;ChooseFolder:&quot;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="commands">Commands</h2>
+<p>Commands available for buttons, menu entries and keyboard shortcuts</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ChooseFolder: Initial folder name filter</code></td>
+<td>Folder selection</td>
+</tr>
+<tr>
+<td><code>Clippath:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Close: Filter</code></td>
+<td>Close the tab corresponding to the filter</td>
+</tr>
+<tr>
+<td><code>Closed:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Columns: column name, width ...</code></td>
+<td>Column settings</td>
+</tr>
+<tr>
+<td><code>Columns: Column number = width</code></td>
+<td>Column setting 2</td>
+</tr>
+<tr>
+<td><code>Command:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Confirm: &quot;Title&quot;, &quot;Message&quot;</code></td>
+<td>Verification</td>
+</tr>
+<tr>
+<td><code>Copy: [Item]… / t [Destination] [Option]</code></td>
+<td>copy</td>
+</tr>
+<tr>
+<td><code>Delete: [Item]… [Option]</code></td>
+<td>Delete</td>
+</tr>
+<tr>
+<td><code>Exec:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Folder:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Foreach: Command% Variable%</code></td>
+<td>Execute selection items one by one</td>
+</tr>
+<tr>
+<td><code>Go:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Input: &quot;Title&quot;, &quot;Message 1&quot;, &quot;Message 2&quot;, &quot;Initial value&quot;</code></td>
+<td>input</td>
+</tr>
+<tr>
+<td><code>Lock:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Move: [Item]… / t [Destination] [Option]</code></td>
+<td>mobile</td>
+</tr>
+<tr>
+<td><code>NewFile: new file name</code></td>
+<td>File creation</td>
+</tr>
+<tr>
+<td><code>New Folder: New folder name</code></td>
+<td>Create folder</td>
+</tr>
+<tr>
+<td><code>Newtab:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Numbering: &quot;Pattern&quot;, Start value, Increment, String to replace, String after replacement</code></td>
+<td>Serialization (replacement)</td>
+</tr>
+<tr>
+<td><code>Preview: Menu [Size]</code></td>
+<td>Menu preview</td>
+</tr>
+<tr>
+<td><code>Refresh:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Rename:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>SendKeys: key names to send, ....</code></td>
+<td>Send key</td>
+</tr>
+<tr>
+<td><code>Set:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Sort:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Swap: Option name 1, Option name 2</code></td>
+<td>Swapping options (environment variables)</td>
+</tr>
+<tr>
+<td><code>Thumbnail:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Unlock:</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>Viewstyle:</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="tips">Tips</h2>
+<h3 id="copy-name-of-all-selected-items-to-clipboard">Copy name of all selected items to clipboard</h3>
+<p>Source: <a href="https://github.com/tablacus/TablacusExplorer/issues/366#issuecomment-770373915">https://github.com/tablacus/TablacusExplorer/issues/366#issuecomment-770373915</a></p>
+<p>To copy the name of all selected items to clipboard in a menu entry or button add a new entry.
+Set _Type _to <code>X-Finder</code> and _Options _to <code>ClipPath:12</code></p>
+<p><img src="https://user-images.githubusercontent.com/5156977/106383607-5bf27900-640a-11eb-8e1d-c75fd6ffdd86.png" alt="Copy selected names to clipboard"></p>
+
+</body>
+</html>
