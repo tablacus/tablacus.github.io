@@ -1,5 +1,6 @@
 var pr = "21.5.16";
 
+
 CalcVersion = function (s) {
 	var r = 0;
 	var res = /(\d+)\.(\d+)\.(\d+)/.exec(s);
