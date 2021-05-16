@@ -9,14 +9,14 @@ CalcVersion = function (s) {
 	return (['00000', r].join("")).substr(-6);
 }
 
-var ean = CalcVersion(ea);
-if (ean > CalcVersion(document.getElementById("ver").innerHTML)) {
+var prn = CalcVersion(ea);
+if (prn > CalcVersion(document.getElementById("ver").innerHTML)) {
 	var dl = document.getElementById("dl").innerHTML.replace(/\(.*/, "");
 	var str = /[ァ-ヶ]/.test(dl) ? "プレリリース版 " : "Pre-release Edition ";
 	var s = '<a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseEA" role="button" aria-expanded="false" aria-controls="collapseEA">' + str + ea + '</a>';
 	s += '<div class="collapse" id="collapseEA">';
 	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/tag/' + ea + '">GitHub</a><br>';
-	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/download/' + ea + '/te' + ean + '.zip">' + dl + '</a><br>';
+	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/download/' + ea + '/te' + prn + '.zip">' + dl + '</a><br>';
 	s += '</div>';
 	document.write(s);
 }
