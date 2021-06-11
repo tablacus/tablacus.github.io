@@ -1,4 +1,4 @@
-var pr = "21.6.9";
+var pr = "21.6.11";
 
 CalcVersion = function (s) {
 	var r = 0;
@@ -13,7 +13,7 @@ var prn = CalcVersion(pr);
 if (prn > CalcVersion(document.getElementById("ver").innerHTML)) {
 	var dl = document.getElementById("dl").innerHTML.replace(/\(.*/, "");
 	var str = /[ァ-ヶ]/.test(dl) ? "プレリリース版 " : "Pre-release Edition ";
-	var s = '<a class="btn btn-danger btn-sm" data-toggle="collapse" href="#collapseEA" role="button" aria-expanded="false" aria-controls="collapseEA">' + str + pr + '</a>';
+	var s = '<a class="btn btn-secondary btn-sm" data-toggle="collapse" href="#collapseEA" role="button" aria-expanded="false" aria-controls="collapseEA">' + str + pr + '</a>';
 	s += '<div class="collapse" id="collapseEA">';
 	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/tag/' + pr + '">GitHub</a><br>';
 	s += '<a href="https://github.com/tablacus/TablacusExplorer/releases/download/' + pr + '/te' + prn + '.zip">' + dl + '</a><br>';
