@@ -1,4 +1,4 @@
-var pr = "21.12.17";
+var pr = "21.12.18";
 
 CalcVersion = function (s) {
 	var r = 0;
