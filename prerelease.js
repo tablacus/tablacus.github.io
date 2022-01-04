@@ -1,4 +1,4 @@
-var pr = "22.1.3";
+var pr = "22.1.4";
 
 CalcVersion = function (s) {
 	var r = 0;
