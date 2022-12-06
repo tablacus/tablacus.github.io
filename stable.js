@@ -1,4 +1,4 @@
-var se = "22.6.27";
+var se = "22.11.3";
 
 CalcVersion = function (s) {
 	var r = 0;
